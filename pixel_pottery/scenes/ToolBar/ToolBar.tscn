@@ -1,0 +1,203 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://scenes/ToolBar/ToolBar.gd" type="Script" id=1]
+[ext_resource path="res://themes/StyleBoxTextures/Complementary_Card_Normal.tres" type="StyleBox" id=2]
+[ext_resource path="res://textures/Icon/BluePrint.png" type="Texture" id=3]
+[ext_resource path="res://textures/Icon/Cogs.png" type="Texture" id=4]
+[ext_resource path="res://textures/Icon/Ledger.png" type="Texture" id=5]
+[ext_resource path="res://textures/Icon/Sliders.png" type="Texture" id=6]
+[ext_resource path="res://textures/Icon/Sales.png" type="Texture" id=7]
+[ext_resource path="res://textures/Icon/TaskList.png" type="Texture" id=8]
+[ext_resource path="res://themes/fonts/StandardPixel.tres" type="DynamicFont" id=9]
+[ext_resource path="res://themes/Light_Card.tres" type="Theme" id=10]
+
+[node name="ButtonBar" type="CenterContainer"]
+anchor_right = 1.0
+margin_bottom = 50.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_left = 418.0
+margin_top = 7.0
+margin_right = 862.0
+margin_bottom = 43.0
+rect_min_size = Vector2( 0, 36 )
+custom_constants/separation = 20
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="Time" type="Panel" parent="HBoxContainer"]
+margin_right = 108.0
+margin_bottom = 36.0
+rect_min_size = Vector2( 108, 36 )
+custom_styles/panel = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="HBoxContainer/Time"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 3.0
+margin_top = 3.0
+margin_right = -3.0
+margin_bottom = -3.0
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="HBoxContainer/Time/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 9 )
+text = "10:00PM"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sales" type="Panel" parent="HBoxContainer"]
+margin_left = 128.0
+margin_right = 164.0
+margin_bottom = 36.0
+rect_min_size = Vector2( 36, 36 )
+custom_styles/panel = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="HBoxContainer/Sales"]
+margin_left = 3.0
+margin_top = 3.0
+margin_right = 33.0
+margin_bottom = 33.0
+focus_mode = 0
+theme = ExtResource( 10 )
+enabled_focus_mode = 0
+icon = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Purchase" type="Panel" parent="HBoxContainer"]
+margin_left = 184.0
+margin_right = 220.0
+margin_bottom = 36.0
+rect_min_size = Vector2( 36, 36 )
+custom_styles/panel = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="HBoxContainer/Purchase"]
+margin_left = 3.0
+margin_top = 3.0
+margin_right = 33.0
+margin_bottom = 33.0
+focus_mode = 0
+theme = ExtResource( 10 )
+enabled_focus_mode = 0
+icon = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Ledger" type="Panel" parent="HBoxContainer"]
+margin_left = 240.0
+margin_right = 276.0
+margin_bottom = 36.0
+rect_min_size = Vector2( 36, 36 )
+custom_styles/panel = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="HBoxContainer/Ledger"]
+margin_left = 3.0
+margin_top = 3.0
+margin_right = 33.0
+margin_bottom = 33.0
+focus_mode = 0
+theme = ExtResource( 10 )
+enabled_focus_mode = 0
+icon = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tasklist" type="Panel" parent="HBoxContainer"]
+margin_left = 296.0
+margin_right = 332.0
+margin_bottom = 36.0
+rect_min_size = Vector2( 36, 36 )
+custom_styles/panel = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="HBoxContainer/Tasklist"]
+margin_left = 3.0
+margin_top = 3.0
+margin_right = 33.0
+margin_bottom = 33.0
+focus_mode = 0
+theme = ExtResource( 10 )
+enabled_focus_mode = 0
+icon = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Options" type="Panel" parent="HBoxContainer"]
+margin_left = 352.0
+margin_right = 388.0
+margin_bottom = 36.0
+rect_min_size = Vector2( 36, 36 )
+custom_styles/panel = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="HBoxContainer/Options"]
+margin_left = 3.0
+margin_top = 3.0
+margin_right = 33.0
+margin_bottom = 33.0
+focus_mode = 0
+theme = ExtResource( 10 )
+enabled_focus_mode = 0
+icon = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sliders" type="Panel" parent="HBoxContainer"]
+margin_left = 408.0
+margin_right = 444.0
+margin_bottom = 36.0
+rect_min_size = Vector2( 36, 36 )
+custom_styles/panel = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="HBoxContainer/Sliders"]
+margin_left = 3.0
+margin_top = 3.0
+margin_right = 33.0
+margin_bottom = 33.0
+focus_mode = 0
+theme = ExtResource( 10 )
+enabled_focus_mode = 0
+icon = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="HBoxContainer/Purchase/Button" to="." method="_on_Purchase_pressed"]

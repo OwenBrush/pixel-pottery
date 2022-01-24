@@ -1,0 +1,90 @@
+[gd_resource type="Theme" load_steps=15 format=2]
+
+[ext_resource path="res://themes/StyleBoxTextures/Primary_Popup_Pressed.tres" type="StyleBox" id=1]
+[ext_resource path="res://themes/StyleBoxTextures/Primary_Card_Disabled.tres" type="StyleBox" id=2]
+[ext_resource path="res://themes/StyleBoxTextures/Primary_Card_Hover.tres" type="StyleBox" id=3]
+[ext_resource path="res://themes/StyleBoxTextures/Primary_Popup_Normal.tres" type="StyleBox" id=4]
+[ext_resource path="res://themes/StyleBoxTextures/Primary_Card_Normal.tres" type="StyleBox" id=5]
+[ext_resource path="res://themes/StyleBoxTextures/Primary_Card_Tab.tres" type="StyleBox" id=6]
+[ext_resource path="res://themes/StyleBoxTextures/Primary_Popup_Hover.tres" type="StyleBox" id=7]
+[ext_resource path="res://themes/StyleBoxTextures/Primary_Card_Focus.tres" type="StyleBox" id=8]
+[ext_resource path="res://themes/StyleBoxTextures/Primary_Card_Pressed.tres" type="StyleBox" id=9]
+[ext_resource path="res://themes/fonts/standard_font.tres" type="DynamicFont" id=10]
+[ext_resource path="res://textures/Icon/BigGrabber.png" type="Texture" id=11]
+[ext_resource path="res://themes/StyleBoxFlats/Scrollbar_normal.tres" type="StyleBox" id=12]
+
+[sub_resource type="StyleBoxEmpty" id=1]
+
+[sub_resource type="StyleBoxLine" id=2]
+content_margin_left = 0.0
+content_margin_right = 0.0
+content_margin_top = 2.0
+content_margin_bottom = 1.0
+color = Color( 0, 0, 0, 0.768627 )
+thickness = 4
+
+[resource]
+default_font = ExtResource( 10 )
+Button/colors/font_color = Color( 1, 1, 1, 0.74902 )
+Button/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
+Button/colors/font_color_hover = Color( 0.94, 0.94, 0.94, 1 )
+Button/colors/font_color_pressed = Color( 1, 1, 1, 1 )
+Button/constants/hseparation = 2
+Button/fonts/font = null
+Button/styles/disabled = ExtResource( 2 )
+Button/styles/focus = ExtResource( 8 )
+Button/styles/hover = ExtResource( 3 )
+Button/styles/normal = ExtResource( 5 )
+Button/styles/pressed = ExtResource( 9 )
+HSlider/icons/grabber = ExtResource( 11 )
+HSlider/icons/grabber_disabled = ExtResource( 11 )
+HSlider/icons/grabber_highlight = ExtResource( 11 )
+HSlider/icons/tick = ExtResource( 11 )
+HSlider/styles/grabber_area = SubResource( 1 )
+HSlider/styles/slider = SubResource( 2 )
+Label/colors/font_color = Color( 1, 1, 1, 0.74902 )
+Label/fonts/font = null
+Label/icons/ = null
+LineEdit/colors/clear_button_color = Color( 0.88, 0.88, 0.88, 1 )
+LineEdit/colors/clear_button_color_pressed = Color( 1, 1, 1, 1 )
+LineEdit/colors/cursor_color = Color( 0.94, 0.94, 0.94, 1 )
+LineEdit/colors/font_color = Color( 0.88, 0.88, 0.88, 1 )
+LineEdit/colors/font_color_selected = Color( 0, 0, 0, 1 )
+LineEdit/colors/font_color_uneditable = Color( 0.88, 0.88, 0.88, 0.5 )
+LineEdit/colors/selection_color = Color( 0.49, 0.49, 0.49, 1 )
+LineEdit/constants/minimum_spaces = 0
+LineEdit/fonts/font = null
+LineEdit/icons/clear = null
+LineEdit/styles/focus = ExtResource( 8 )
+LineEdit/styles/normal = ExtResource( 5 )
+LineEdit/styles/read_only = ExtResource( 2 )
+Panel/styles/panel = ExtResource( 5 )
+PopupPanel/styles/panel = ExtResource( 4 )
+TabContainer/colors/font_color_bg = Color( 1, 1, 1, 0.561765 )
+TabContainer/colors/font_color_disabled = Color( 1, 1, 1, 0.187255 )
+TabContainer/colors/font_color_fg = Color( 1, 1, 1, 0.74902 )
+TabContainer/constants/hseparation = 4
+TabContainer/constants/label_valign_bg = 2
+TabContainer/constants/label_valign_fg = 0
+TabContainer/constants/side_margin = 8
+TabContainer/constants/top_margin = 24
+TabContainer/fonts/font = null
+TabContainer/icons/decrement = null
+TabContainer/icons/decrement_highlight = null
+TabContainer/icons/increment = null
+TabContainer/icons/increment_highlight = null
+TabContainer/icons/menu = null
+TabContainer/icons/menu_highlight = null
+TabContainer/styles/panel = ExtResource( 5 )
+TabContainer/styles/tab_bg = ExtResource( 6 )
+TabContainer/styles/tab_disabled = ExtResource( 6 )
+TabContainer/styles/tab_fg = ExtResource( 6 )
+VScrollBar/icons/decrement = null
+VScrollBar/icons/decrement_highlight = null
+VScrollBar/icons/increment = null
+VScrollBar/icons/increment_highlight = null
+VScrollBar/styles/grabber = ExtResource( 4 )
+VScrollBar/styles/grabber_highlight = ExtResource( 7 )
+VScrollBar/styles/grabber_pressed = ExtResource( 1 )
+VScrollBar/styles/scroll = ExtResource( 12 )
+VScrollBar/styles/scroll_focus = ExtResource( 12 )

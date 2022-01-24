@@ -1,0 +1,58 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://themes/fonts/standard_font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://themes/Primary_Card.tres" type="Theme" id=2]
+[ext_resource path="res://themes/Complementary_Card.tres" type="Theme" id=3]
+[ext_resource path="res://themes/Affirmative_Card.tres" type="Theme" id=4]
+
+[node name="Dialogue" type="Panel"]
+margin_left = -150.0
+margin_top = -80.0
+margin_right = 150.0
+margin_bottom = -20.0
+theme = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_top = 5.0
+margin_right = -245.0
+margin_bottom = -5.0
+rect_min_size = Vector2( 50, 50 )
+theme = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 276.0
+margin_top = 35.0
+margin_right = 296.0
+margin_bottom = 56.0
+theme = ExtResource( 4 )
+custom_fonts/font = ExtResource( 1 )
+button_mask = 0
+text = "OK"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 57.0
+margin_top = 4.0
+margin_right = 272.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 215, 50 )
+rect_clip_content = true
+text = "Hello...  I am looking for a cup.
+Something not too big, and a little bit round.
+"
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

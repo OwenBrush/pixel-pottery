@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scripts/clay_drawing.gd" type="Script" id=1]
+[ext_resource path="res://scripts/clay_drawing_exterior.gd" type="Script" id=2]
+
+[node name="ClayDrawing" type="Node2D"]
+z_index = -1
+z_as_relative = false
+script = ExtResource( 1 )
+
+[node name="ExteriorClayDrawing" type="Node2D" parent="."]
+z_index = 2
+z_as_relative = false
+script = ExtResource( 2 )
+
+[node name="Tween" type="Tween" parent="."]
