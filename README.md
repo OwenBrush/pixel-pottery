@@ -65,4 +65,4 @@ For a larger or more developed project the data generation and classifcation pro
 
 ### Notes:
 * Much of the game mechanics are salvaged from an older project that I was working on while still learning the basics of programming, and there is likely some large inconsistencies in code quality as a result.
-* The integration of a Keras convolutional network into Godot was acomplished with an enormous amount of help from [this repository](https://github.com/postcode-x/godot-keras)
+* The integration of a Keras convolutional network into Godot was acomplished with an enormous amount of help from [this repository](https://github.com/postcode-x/godot-keras).
