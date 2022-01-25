@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://scripts/clay_drawing.gd" type="Script" id=1]
-[ext_resource path="res://scripts/clay_drawing_exterior.gd" type="Script" id=2]
+[ext_resource path="res://scenes/wheel/clay_drawing.gd" type="Script" id=1]
+[ext_resource path="res://scenes/wheel/clay_drawing_exterior.gd" type="Script" id=2]
 
 [node name="ClayDrawing" type="Node2D"]
 z_index = -1

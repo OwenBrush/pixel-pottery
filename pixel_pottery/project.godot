@@ -17,7 +17,7 @@ _global_script_classes=[ {
 "base": "Node",
 "class": "Customer",
 "language": "GDScript",
-"path": "res://scripts/customer_class.gd"
+"path": "res://scripts/Classes/customer_class.gd"
 }, {
 "base": "Reference",
 "class": "Dense",
@@ -62,12 +62,12 @@ config/icon="res://icon.png"
 
 [autoload]
 
-GameEvents="*res://autoload/game_events.gd"
-Globals="*res://autoload/globals.gd"
-GameState="*res://autoload/game_state.gd"
-Classification="*res://autoload/classification.gd"
-Symmetry="*res://autoload/symmetry.gd"
-DataCollection="*res://autoload/data_collection.gd"
+GameEvents="*res://scripts/autoload/game_events.gd"
+Globals="*res://scripts/autoload/globals.gd"
+GameState="*res://scripts/autoload/game_state.gd"
+Classification="*res://scripts/autoload/classification.gd"
+Symmetry="*res://scripts/autoload/symmetry.gd"
+DataCollection="*res://scripts/autoload/data_collection.gd"
 
 [display]
 

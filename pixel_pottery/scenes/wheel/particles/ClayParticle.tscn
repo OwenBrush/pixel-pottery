@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://scenes/wheel/particles/ClayParticle.tres" type="Material" id=1]
-[ext_resource path="res://textures/Throwing/Cell.png" type="Texture" id=2]
+[ext_resource path="res://textures/throwing/Cell.png" type="Texture" id=2]
 [ext_resource path="res://scenes/wheel/particles/ClayParticle.gd" type="Script" id=3]
 
 [node name="ClayParticles" type="Particles2D"]

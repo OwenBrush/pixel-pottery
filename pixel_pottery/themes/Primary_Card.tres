@@ -10,7 +10,7 @@
 [ext_resource path="res://themes/StyleBoxTextures/Primary_Card_Focus.tres" type="StyleBox" id=8]
 [ext_resource path="res://themes/StyleBoxTextures/Primary_Card_Pressed.tres" type="StyleBox" id=9]
 [ext_resource path="res://themes/fonts/standard_font.tres" type="DynamicFont" id=10]
-[ext_resource path="res://textures/Icon/BigGrabber.png" type="Texture" id=11]
+[ext_resource path="res://textures/icons/BigGrabber.png" type="Texture" id=11]
 [ext_resource path="res://themes/StyleBoxFlats/Scrollbar_normal.tres" type="StyleBox" id=12]
 
 [sub_resource type="StyleBoxEmpty" id=1]

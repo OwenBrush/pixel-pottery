@@ -8,7 +8,7 @@
 [ext_resource path="res://themes/fonts/StandardPixel.tres" type="DynamicFont" id=6]
 [ext_resource path="res://themes/StyleBoxTextures/Negative_Popup_Normal.tres" type="StyleBox" id=7]
 [ext_resource path="res://themes/StyleBoxTextures/Negative_Card_Disabled.tres" type="StyleBox" id=8]
-[ext_resource path="res://textures/Icon/BigGrabber.png" type="Texture" id=9]
+[ext_resource path="res://textures/icons/BigGrabber.png" type="Texture" id=9]
 
 [sub_resource type="StyleBoxEmpty" id=1]
 

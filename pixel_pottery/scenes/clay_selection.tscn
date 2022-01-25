@@ -1,15 +1,35 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://scripts/clay_selection.gd" type="Script" id=1]
 [ext_resource path="res://themes/Primary_Card.tres" type="Theme" id=2]
 [ext_resource path="res://themes/Affirmative_Card.tres" type="Theme" id=4]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Panel
+
+func _ready():
+	GameEvents.connect(\"select_clay_pixels\",self,\"_on_emit_select_clay_pixels\")
+	
+func _on_emit_select_clay_pixels():
+	show()
+
+func _on_HSlider_value_changed(value):
+	
+	var pixels = value * Globals.MAX_CLAY_PIXELS
+	GameEvents.emit_clay_pixels_selected(pixels)
+
+
+func _on_Select_pressed():
+	GameEvents.emit_begin_throwing()
+	hide()
+	pass # Replace with function body.
+"
 
 [node name="ClaySelection" type="Panel"]
 margin_right = 100.0
 margin_bottom = 60.0
 rect_min_size = Vector2( 100, 60 )
 theme = ExtResource( 2 )
-script = ExtResource( 1 )
+script = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
