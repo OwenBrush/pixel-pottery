@@ -15,6 +15,8 @@
 * Player-made game assets.
 
 ### How the image classification works:
+![Screenshot](/screen_shot.png?raw=true "Optional Title")
+
 * The profile of the object created is captured as a black and white image and classified as one of 4 categories:
   * Cup
   * Bowl
@@ -23,3 +25,11 @@
 * The piece is also given a score based on how symmetrical the object is, allowing for variation in preferences within a given class.
 * Each customer has their own neural net, trained on a unique data set and given a different preference for symmetry, simulating different opinions and tastes between people.
 
+### Examples from test data:
+![Cup class](/pixel_pottery_modelling/graphs/cup_class.png?raw=true "Optional Title")
+
+![Bowl class](/pixel_pottery_modelling/graphs/bowl_class.png?raw=true "Optional Title")
+
+![Decorative class](/pixel_pottery_modelling/graphs/decorative_class.png?raw=true "Optional Title")
+
+![Junk class](/pixel_pottery_modelling/graphs/junk_class.png?raw=true "Optional Title")
