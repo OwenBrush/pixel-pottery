@@ -36,6 +36,11 @@
 ![Junk class](/pixel_pottery_modelling/graphs/junk_class.png?raw=true "Optional Title")
 
 ### Classification performance with test data:
+* Each model scores around 80% accuracy.  (with a baseline accuracy of 40%, were it to just always guess the most common class)
+* Many of the false classifcations are due the subjectivity of the data and are often reasonable mistakes.
+* Extremely assymetrical images can also confuse the model, but this is accounted for with the symmetry score, where if the symmetry is far enough away from the preferences of the customer it is labeled as junk regardless of what the classifier chose.
+
+
 * model_1 (customer name: Mabel)
 
 ![Model_1](/pixel_pottery_modelling/graphs/model_1.png?raw=true "Optional Title")
