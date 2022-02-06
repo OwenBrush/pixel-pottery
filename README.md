@@ -25,6 +25,10 @@
 
 ![Screenshot](/screenshot.png?raw=true "Optional Title")
 
+### Dataset Generation
+* While in data collection mode, the game saves every unique frame during a play session as a 96x96 black and white image, which can then manually classified
+  * Classification process is made easier due to the images being in a time sequence, allowing sequeces of similar images to be classified in batches.
+* This could be adapted for crowd sources data collection, or building models that are unique and responsive to individual players.
 
 ### Examples from test data:
 ![Cup class](/pixel_pottery_modelling/graphs/cup_class.png?raw=true "Optional Title")
